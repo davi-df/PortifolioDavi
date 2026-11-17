@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400..900&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap');
+</style>
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio</title>
+    <link rel="icon" href="imgEico/internet.png" type="image/x-icon">
+</head>
+<body>
+  <!--=========================================CABEÇALHO=========================================-->
+  <header>
+    <div class="h1">
+      <span >P</span><span>O</span><span>R</span><span>T</span><span>I</span><span >F</span><span>Ó</span><span>L</span><span>I</span><span>O</span>
+      <em>
+        <span>D</span><span>A</span><span>V</span><span>I</span>
+      </em>
+    </div>
+    <!-- FOTO DE PERFIL -->
+    <img title="Clique Aqui" id="perfil" src="imgEico/image.png" alt="Foto de perfil" tabindex="0">
+    <!-- =========== -->
+    
+    <!-- ABA DE INFORMAÇÕES -->
+    <section id="infos">
+      <div class="macoes">
+        <h4>Nome do usuário:</h4>
+        <p>Davi Dantas Ferreira</p>
+      </div>
+      <div class="macoes">
+        <h4>DataNascimento:</h4>
+        <p>21/01/2008</p>
+      </div>
+      <div class="macoes">  
+        <h4>Formações:</h4>
+        <p> 1° Técnico em Infoemática</p>
+        <p> 2° Análise e Desemvolvimento de Sistemas - Em andamento</p>
+        <p>3° Auxiliar de processos de mineração - Iniciar...</p>
+      </div>
+    </section>
+  </header>
+  <!-- ================FIM DO CABEÇALHO================= -->
+
+  <!-- ============OPÇÕES DE SITES========== -->
+  <section id="adc">
+    <ul>
+        <li>
+          <a href="https://www.youtube.com/'" target="_blank" rel="noopener noreferrer">Youtube</a>
+        </li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a id="lightMode" type="button">LightMode</a></li>
+        <li>Adicionar</li>
+        <li>Mais...</li>
+    </ul>
+  </section>
+  <!-- ========FIM DAS OPÇÕES DE SITES ========-->
+
+<!-- ====================ÁREA DOS CARTÕES DE FORMAÇÃO==================== -->
+  <section id="cards">
+
+    <!--1° BLOCO DE CARTÃO ÚNICO -->
+    <div class="card">
+       <div class="imgS" tabindex="0">
+            <img title="Clique Aqui" class="img-card img-escuro" src="imgEico/compiuterb.png" alt="ImagemB">
+            <img title="Clique Aqui" class="img-card img-claro" src="imgEico/compiuterc.png" alt="ImagemC">
+      </div>
+      <div class="texto">
+          <p class="adjetivo">O estudante domina linguagens de programação essenciais para construir softwares modernos, aplicativos móveis e sistemas web completos. Modelar bancos de dados, aplicar conceitos de engenharia de software e garantir a segurança das informações.</p>
+      </div>
+      <nav id="forma">
+        <h3>ADS</h3>
+        <p>Análise e desenvolvimento de sistemas.</p>
+      </nav>
+    </div>
+    <!-- FIM DO BLOCO CARTÃO ÚNICO -->
+
+    <!--2° BLOCO DE CARTÃO ÚNICO -->
+    <div class="card">
+       <div class="imgS" tabindex="0">
+            <img title="Clique Aqui" class="img-card img-escuro" src="imgEico/compiuterb.png" alt="ImagemB">
+            <img title="Clique Aqui" class="img-card img-claro" src="imgEico/compiuterc.png" alt="ImagemC">
+      </div>
+      <div class="texto">
+          <p class="adjetivo">O estudante domina a montagem de computadores, a configuração de redes locais e o suporte técnico completo. Instalar sistemas operacionais, criar aplicativos básicos e garantir a segurança de dados e sistemas.</p>
+      </div>
+      <nav id="forma">
+        <h3>TI</h3>
+        <p>Técnico em Informática.</p>
+      </nav>
+    </div>
+    <!-- FIM DO BLOCO CARTÃO ÚNICO -->
+    
+    <!--3° BLOCO DE CARTÃO ÚNICO -->
+    <div class="card">
+       <div class="imgS" tabindex="0">
+            <img title="Clique Aqui" class="img-card img-escuro" src="imgEico/compiuterb.png" alt="ImagemB">
+            <img title="Clique Aqui" class="img-card img-claro" src="imgEico/compiuterc.png" alt="ImagemC">
+      </div>
+      <div class="texto">
+          <p class="adjetivo">O estudante domina técnicas essenciais para apoiar a extração, o transporte e o beneficiamento de minérios. Coletar amostras geológicas, operar equipamentos básicos e garantir a segurança ambiental e operacional.</p>
+      </div>
+      <nav id="forma">
+        <h3>APM</h3>
+        <p>Auxiliar em processos de mineração.</p>
+      </nav>
+    </div>
+    <!-- FIM DO BLOCO CARTÃO ÚNICO -->
+  </section>
+  <!-- FIM DA ÁREA DOS CARTÕES DE FORMAÇÃO -->
+
+  <!--Funções java script -->
+    <script>
+      const botao = document.getElementById('lightMode');
+
+      botao.addEventListener('click', () => {
+        document.body.classList.toggle('modoClaro');
+        botao.textContent = document.body.classList.contains('modoClaro') ? 'DarkMode' : 'LightMode';
+
+      });
+    </script>
+</body>
+</html>
